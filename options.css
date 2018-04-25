@@ -1,0 +1,27 @@
+div.spacer{
+	height: 20px;
+	/*width: 30px;*/
+	/*background-color: purple*/;
+}
+
+div.spacer2{
+	height: 5px;
+}
+
+span#saveSpan{
+	margin-left: 10px;
+}
+
+input#maxNumber, input#maxNumberInput
+{
+	margin-top: 0px;
+}
+
+p#lesserOf
+{
+	margin-bottom: 0px;
+}
+
+/*p#infoText{
+	line-height: 150%;
+}*/

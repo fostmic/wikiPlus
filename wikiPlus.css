@@ -1,0 +1,15 @@
+#wikiPlusStatus
+{
+  position:fixed;
+  background-color: #89fff5;
+  top:0;
+  left:50%;
+  width:200px;
+  margin-left:-100px;
+  text-align: center;
+}
+
+/*#wikiPlusStatus p
+{
+  text-align:center;
+}*/

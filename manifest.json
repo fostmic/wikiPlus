@@ -1,0 +1,42 @@
+{
+	"manifest_version": 2,
+
+	"name": "WikipediaPlus",
+
+  "author": "Michael Foster",
+
+	"version": "0.0.1",
+
+	"description": "Easily see how recently and frequently parts of a wikipedia article have been changed.",
+
+	"background": {
+		"scripts": ["background.js"],
+		"psersistent": false
+	},
+	//todo: update jquery source file to compressed version
+	 "content_scripts": [ {
+		"css": [ "wikiPlus.css" ],
+		"js": ["diff_match_patch.js", "jquery-3.1.1.js", "doubleLinkedList.js", "bundle.js", "wikiPlus.js"],
+		"matches": [ "http://*.wikipedia.org/wiki/*", "https://*.wikipedia.org/wiki/*" ],
+				"run_at": "document_idle"
+	} ],
+
+	"icons": {  "16": "img/icon16.png",
+		"48": "img/icon48.png",
+		"128": "img/icon128.png" },
+
+	"options_ui": {
+		"page": "options.html",
+		"chrome_style": true,
+		"open_in_tab": false
+	},
+
+	"permissions": [
+		"declarativeContent",
+		"storage",
+		"http://*.wikipedia.org/wiki/*",
+		"https://*.wikipedia.org/wiki/*"
+	],
+
+	"page_action": { "default_popup": "popup.html" }
+}

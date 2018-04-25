@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WikipediaPlus Options</title>
+  <link href="options.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <p><b>Number of previous versions of a page to load</b></p>
+
+  <p id="lesserOf">The lesser of:</p>
+  <!--<input type="checkbox" id="maxNumber" class="checkBox">-->
+  <input type="number" id="maxNumberInput" name="maxNumberInput" class="numberInput" min="1" max="99"> pages
+  <div class="spacer2"></div>
+
+  <input type="checkbox" id="maxDays" class="checkBox">
+  <input type="number" id="maxDaysInput" name="maxDaysInput" class="numberInput" min="1" max="999"> previous days
+
+  <div id="status"></div>
+  <div class="spacer"></div>
+  <button id="save">Save</button><span id="saveSpan"> </span>
+
+  <script src="options.js"></script>
+</body>
+</html>
